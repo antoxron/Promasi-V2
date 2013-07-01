@@ -93,6 +93,9 @@
       <plugin id="org.eclipse.zest.layouts"/>
       <plugin id="org.promasi.coredesigner"/>
       <plugin id="org.promasi.coredesigner.rcp"/>
+      <plugin id="org.promasi.sdsystem"/>
+      <plugin id="org.promasi.sdsystem.model"/>
+      <plugin id="org.promasi.utilities"/>
       <plugin id="org.w3c.css.sac"/>
       <plugin id="org.w3c.dom.events"/>
       <plugin id="org.w3c.dom.smil"/>
