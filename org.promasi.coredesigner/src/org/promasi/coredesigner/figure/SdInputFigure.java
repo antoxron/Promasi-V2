@@ -25,6 +25,7 @@ public class SdInputFigure extends ImageFigure {
 	 */
 	private TextFlow _name = new TextFlow();
 	
+	@SuppressWarnings("deprecation")
 	public SdInputFigure( ) { 
 
 		FlowLayout layout = new FlowLayout(); 

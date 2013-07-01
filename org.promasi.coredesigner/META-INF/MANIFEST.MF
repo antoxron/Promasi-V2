@@ -8,7 +8,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.gef;bundle-version="3.6.2",
  org.eclipse.ui.views;bundle-version="3.5.1",
- org.eclipse.ui.forms;bundle-version="3.5.2"
+ org.eclipse.ui.forms;bundle-version="3.5.2",
+ org.promasi.sdsystem;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: .,

@@ -26,6 +26,7 @@ public class SdOutputFigure extends ImageFigure{
 	private TextFlow _name = new TextFlow();
 	
 	
+	@SuppressWarnings("deprecation")
 	public SdOutputFigure( ) { 
 		
 		FlowLayout layout = new FlowLayout(); 

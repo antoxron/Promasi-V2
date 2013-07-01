@@ -16,6 +16,7 @@ import org.eclipse.jface.action.IToolBarManager;
 import org.eclipse.jface.action.Separator;
 
 import org.eclipse.ui.actions.ActionFactory;
+import org.promasi.coredesigner.actions.SimulationAction;
 /**
  * 
  * @author antoxron
@@ -38,6 +39,9 @@ public class SdGraphicalEditorActionBarContributor extends ActionBarContributor 
 		addRetargetAction( new AlignmentRetargetAction( PositionConstants.TOP ) );
 		addRetargetAction( new AlignmentRetargetAction( PositionConstants.MIDDLE ) );
 		addRetargetAction( new AlignmentRetargetAction( PositionConstants.BOTTOM ) );	
+		
+		addAction( new SimulationAction(this.getPage().getActivePart()) );	
+
 	}
 	public void contributeToToolBar( IToolBarManager toolBarManager ) { 
 		toolBarManager.add( getAction( ActionFactory.UNDO.getId() ) ); 
@@ -57,6 +61,9 @@ public class SdGraphicalEditorActionBarContributor extends ActionBarContributor 
 		toolBarManager.add( getActionRegistry().getAction( GEFActionConstants.ALIGN_TOP ) );
 		toolBarManager.add( getActionRegistry().getAction( GEFActionConstants.ALIGN_MIDDLE ) );
 		toolBarManager.add( getActionRegistry().getAction( GEFActionConstants.ALIGN_BOTTOM ) );
+		
+		toolBarManager.add( getActionRegistry().getAction( SimulationAction.ID) );
+
 	}
 	@Override
 	protected void declareGlobalActionKeys( ) {

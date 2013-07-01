@@ -27,6 +27,7 @@ public class SdFlowFigure extends ImageFigure {
 	private TextFlow _name = new TextFlow();
 	
 	
+	@SuppressWarnings("deprecation")
 	public SdFlowFigure( ) { 
 		
 		FlowLayout layout = new FlowLayout(); 		

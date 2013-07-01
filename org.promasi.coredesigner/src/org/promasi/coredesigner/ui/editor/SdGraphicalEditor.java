@@ -70,6 +70,7 @@ import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.views.contentoutline.IContentOutlinePage;
 
 import org.promasi.coredesigner.actions.SdObjectPropertiesAction;
+import org.promasi.coredesigner.actions.SimulationAction;
 import org.promasi.coredesigner.dnd.SdTemplateTransferDropTargetListener;
 import org.promasi.coredesigner.editpart.SdEditPartFactory;
 import org.promasi.coredesigner.model.NameValidator;
@@ -730,6 +731,12 @@ public class SdGraphicalEditor extends GraphicalEditorWithFlyoutPalette {
 	    
 	     action = new SdObjectPropertiesAction(this);
 		registry.registerAction(action);
+		getSelectionActions().add(action.getId());
+		
+		 action = new SimulationAction(this);
+		registry.registerAction(action);
+		
+		
 		getSelectionActions().add(action.getId());
 	}
 	@SuppressWarnings("rawtypes")

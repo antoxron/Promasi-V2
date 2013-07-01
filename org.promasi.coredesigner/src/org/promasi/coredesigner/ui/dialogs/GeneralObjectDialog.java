@@ -257,7 +257,7 @@ public class GeneralObjectDialog extends ApplicationWindow {
 
 			        // Using iterator in SortedMap 
 			        Iterator<Entry<String, String>> i=s.iterator();
-			        int index = 0;
+			//        int index = 0;
 			        while(i.hasNext()) {
 			        	
 			            Map.Entry<String , String> m =(Map.Entry<String , String>)i.next();
@@ -268,7 +268,7 @@ public class GeneralObjectDialog extends ApplicationWindow {
 			            if (key.equals(selectedEquation)) {
 			            	_equationList.setText(selectedEquation);
 			            }
-			            index++;
+			       //     index++;
 			        }
 			}
 		}

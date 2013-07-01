@@ -65,7 +65,19 @@ public class SdObjectPropertiesAction extends SelectionAction  {
 	@Override
 	protected boolean calculateEnabled( ) {
 		boolean enabled = false;
-				
+			
+		if ( getSelectedObjects().size() > 0) {
+			Object object = getSelectedObjects().get( 0 );
+			
+			if ( !( object instanceof SdConnectionPart ) ) {
+				AbstractEditPart editPart = ( AbstractEditPart )getSelectedObjects().get( 0 );
+				if ( !( editPart instanceof SdModelEditPart ) ) {
+
+					enabled = true;
+				}
+			}
+		}
+		/*
 		Object object = getSelectedObjects().get( 0 );
 		
 		if ( !( object instanceof SdConnectionPart ) ) {
@@ -74,7 +86,9 @@ public class SdObjectPropertiesAction extends SelectionAction  {
 
 				enabled = true;
 			}
-		}
+		}*/
+		
+		
 		return enabled;
 	}
     
